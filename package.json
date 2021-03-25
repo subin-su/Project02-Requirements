@@ -1,35 +1,22 @@
 {
-  "name": "mvc-techblog",
+  "name": "project02-requirements",
   "version": "1.0.0",
   "description": "## Description",
   "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "seed": "node seeds/index.js"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "bcryptjs": "^2.4.3",
-    "connect-session-sequelize": "^7.1.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.1",
-    "express-session": "^1.17.1",
-    "handlebars": "^4.7.7",
-    "mysql2": "^2.2.5",
-    "sequelize": "^6.5.1"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azun510/mvc-techblog.git"
+    "url": "git+https://github.com/subin-su/Project02-Requirements.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azun510/mvc-techblog/issues"
+    "url": "https://github.com/subin-su/Project02-Requirements/issues"
   },
-  "homepage": "https://github.com/azun510/mvc-techblog#readme"
+  "homepage": "https://github.com/subin-su/Project02-Requirements#readme"
 }
