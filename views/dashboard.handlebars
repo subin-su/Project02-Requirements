@@ -1,31 +1,66 @@
-<section>
-  <h4>Create New Post</h4>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="/stylesheets/login.css">
+<title>Document</title>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+</head>
+
+<body>
+  <div id="moment">sxsdxssxs</div>
+
+  <div class="card-group">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Search Stocks</h5>
+        <input id="abc" type="text" placeholder="Search stocks eg. AAPL,TSLA" />
+        <button id="stock">Submit</button>
+        <button id="delete">Delete</button>
+        <div id="company"></div>
+        <div id="price"></div>
+        <div id="high"></div>
+        <div id="low"></div>
+        <div id="condiments"></div>
+      </div>
     </div>
-    <div>
-      <label for="post-content">Content</label>
-      <input type="text" id="post-content" name="post-content" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
+  </div>
+  <br>
+  <section class="login">
+    <h4>Create New Notes</h4>
+    <form>
+      <div>
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" name="post-title" />
+      </div>
+      <div>
+        <label for="post-content">Content</label>
+        <input type="text" id="post-content" name="post-content" />
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+    <br>
+    {{#if posts.length}}
+    <section>
+      <h4>View Your Notes</h4>
+      <ul class="collection">
+        {{#each posts as |post|}}
+        <li class="collection-item">
+          {{> post-info post}}
+          <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Notes</a>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    {{/if}}
+  </section>
 
-{{#if posts.length}}
-<section>
-  <h3>Your Posts</h3>
-  <ul class= "collection">
-    {{#each posts as |post|}}
-    <li class="collection-item">
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ul>
-</section>
-{{/if}}
+  <script src="/javascript/add-post.js"></script>
+  <script src="/javascript/stock.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-<script src="/javascript/add-post.js"></script>
+</body>
+
+</html>

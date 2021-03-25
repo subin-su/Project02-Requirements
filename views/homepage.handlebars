@@ -1,7 +1,17 @@
-<ul class="collection">
-  {{#each posts as |post|}}
-  <li class="collection-item">
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ul>
+<section class="header-content">
+  <h1>CornStocks <span class="flipH">🌽</span></h1>
+  <p> Welcome! Looking to invest in your future?<br>
+    Log in to see your picks and previous searches:
+  </p>
+  <button id="myButton2">Sign In</button>
+  <button id="myButton" class="float-left submit-button">Beginner Info</button>
+</section>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://www.investopedia.com/articles/basics/06/invest1000.asp";
+    };
+    document.getElementById("myButton2").onclick = function () {
+        location.href = "/login";
+    };
+</script>

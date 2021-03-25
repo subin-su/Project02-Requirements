@@ -4,6 +4,7 @@ body {
   display: inline;
   margin: 0px;
 }
+
 .container-fluid {
   height: 100%;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   width: 100%;
   background: #fff;
 }
+
 /* ============= Animation background ========= */
 .background {
   background: linear-gradient(132deg, #fc415a, #591bc5, #212335);
@@ -33,19 +35,23 @@ header {
   margin: 0;
   padding: 0;
 }
+
 /* navbar */
 nav {
   color: #fff;
   float: right;
   margin: 30px 90px;
 }
+
 nav ul {
   list-style: none;
 }
+
 nav ul li {
   float: left;
   transition: 0.3s;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #efeef5;
@@ -64,6 +70,7 @@ nav ul li:hover {
   margin-top: -30px;
   text-decoration: underline;
 }
+
 /* Logo */
 .logo {
   width: 35px;
@@ -73,6 +80,7 @@ nav ul li:hover {
   float: left;
   transform: rotate(-30deg);
 }
+
 .logo span {
   color: #591bc5;
   font-size: 2em;
@@ -80,22 +88,42 @@ nav ul li:hover {
   padding-left: 5px;
   font-weight: bold;
 }
+
+#logout {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #efeef5;
+  text-decoration: none;
+  transition: 0.5;
+  font-size: 15px;
+  margin-left: 16px;
+  position: relative;
+  
+}
+
 /* Header content & title & button*/
 .header-content {
   margin-top: 18%;
   text-align: center;
   color: #efeef5;
 }
+
 .header-content h1 {
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 1px;
 }
+
 .header-content p {
   font-size: 20px;
   line-height: 1.5;
   margin: 20px auto;
 }
+
 .header-content button {
   width: 140px;
   margin: 20px 10px;
@@ -109,9 +137,11 @@ nav ul li:hover {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .header-content button:hover {
   border-radius: 0;
 }
+
 /* Animate Background*/
 @keyframes Gradient {
   0% {
@@ -142,4 +172,8 @@ span {
   -o-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
+}
+
+.footer {
+  text-align: center;
 }

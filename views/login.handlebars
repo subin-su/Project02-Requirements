@@ -1,30 +1,37 @@
-<form class="login-form">
-  <h3>Login</h3>
-  <div>
-    <label for="username-signup">Username:</label>
-    <input type="text" id="username-login" />
+<link rel="stylesheet" href="/stylesheets/login.css">
+<section class="header-content">
+  <h1>Hello, Investor! </h1>
+  <div class="login">
+    <form class="login-form" id="login">
+      <h3>Log In</h3>
+      <div>
+        <label for="username-signup">Username:</label>
+        <input type="text" id="username-login" />
+      </div>
+      <div>
+        <label for="password-login">Password:</label>
+        <input type="password" id="password-login" />
+      </div>
+      <div>
+        <button type="submit" name="action">Log In</button>
+      </div>
+    </form>
+    <br>
+    <h3>Sign Up </h4>
+    <form class="signup-form">
+      <div>
+        <label for="username-signup">Username:</label>
+        <input type="text" id="username-signup" />
+      </div>
+      <div>
+        <label for="password-signup">Password:</label>
+        <input type="password" id="password-signup" />
+      </div>
+      <div>
+        <button type="submit" name="action">Sign Up</button>
+      </div>
+    </form>
   </div>
-  <div>
-    <label for="password-login">Password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button class="btn waves-effect waves-light" type="submit" name="action">login</button>
-  </div>
-</form>
-<h4>Sign up! </h4>
-<form class="signup-form">
-  <div>
-    <label for="username-signup">Username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="password-signup">Password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button class="btn waves-effect waves-light" type="submit" name="action">signup</button>
-  </div>
-</form>
 
-<script src="/javascript/login.js"></script>
+  <script src="/javascript/login.js"></script>
+</section>

@@ -4,22 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Personal Tech Blog by Andrew Zuniga</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>CornStocks</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <style>
-    .nav-wrapper {
-      background-color: #26a69a;
-    }
+
   </style>
 </head>
 
-<body style="background-color:#ffcdd2">
-  <div class="container">
+<body>
+  <div class="container-fluid">
+    <!-- Background animation-->
+    <div class="background">  
     <nav>
       <div class="nav-wrapper">
-        <a href="/" class="brand-logo">Tech Blog</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <a href="/">Home</a>
@@ -29,7 +27,7 @@
           </li>
           <li>
             {{#if loggedIn}}
-            <button id="logout" class="waves-effect waves-red lighten-2 btn-flat">Logout</button>
+            <button id="logout">Logout</button>
             {{else}}
             <a href="/login">Login</a>
             {{/if}}
@@ -41,13 +39,13 @@
     <main>
       {{{ body }}}
     </main>
-    <footer class="center-align">
-      &#169; 2021 Tech Blog
+    <footer class="footer">
+      &#169; Team 10
     </footer>
+    </div>
   </div>
   
   {{#if loggedIn}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="/javascript/logout.js"></script>
   {{/if}}
 </body>
