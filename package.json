@@ -1,5 +1,5 @@
 {
-  "name": "project02-requirements",
+  "name": "mvc-techblog",
   "version": "1.0.0",
   "description": "## Description",
   "main": "server.js",
@@ -26,10 +26,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/subin-su/Project02-Requirements.git"
+    "url": "git+https://github.com/azun510/mvc-techblog.git"
   },
   "bugs": {
-    "url": "https://github.com/subin-su/Project02-Requirements/issues"
+    "url": "https://github.com/azun510/mvc-techblog/issues"
   },
-  "homepage": "https://github.com/subin-su/Project02-Requirements#readme"
+  "homepage": "https://github.com/azun510/mvc-techblog#readme"
 }
