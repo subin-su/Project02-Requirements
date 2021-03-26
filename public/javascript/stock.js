@@ -41,7 +41,7 @@ val.addEventListener('click', function () {
                 company.innerHTML = (`Stock Symbol: ${stockSymbol}`)
                 price.textContent = (`Price: $${stockPrice}`)
                 high.innerHTML=(`High:${stockhigh}`)
-                low.innerHTML=(`High:${stocklow}`)
+                low.innerHTML=(`Low:${stocklow}`)
                 let condiments = document.querySelector("#condiments ")
                 // Display the search results to the page
                 var btn1 = document.createElement("div");
