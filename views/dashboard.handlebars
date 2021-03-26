@@ -16,8 +16,8 @@
       <div class="card-body">
         <h5 class="card-title">Search Stocks</h5>
         <input id="abc" type="text" placeholder="Search stocks eg. AAPL,TSLA" />
-        <button id="stock">Submit</button>
-        <button id="delete">Delete</button>
+        <button type="button" class="btn btn-info" id="stock">Submit</button>
+        <button type="button" class="btn btn-info" id="delete">Delete</button>
         <div id="company"></div>
         <div id="price"></div>
         <div id="high"></div>
@@ -38,7 +38,7 @@
         <label for="post-content">Content</label>
         <input type="text" id="post-content" name="post-content" />
       </div>
-      <button type="submit" class="label">Save</button>
+      <button type="button" class="btn btn-info">Save</button>
     </form>
     <br>
     {{#if posts.length}}

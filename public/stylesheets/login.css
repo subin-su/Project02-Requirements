@@ -172,10 +172,13 @@ body {
       border-radius: 17px;  
       padding-left: 7px;  
       color: blue;  
-      font-weight: 550;
-    
-    
+      font-weight: 550; 
   }  
+  #moment {
+    font-size: 15px;
+    color: white;
+    width: 50%
+  }
   span{  
       color: white;  
       font-size: 17px;  
