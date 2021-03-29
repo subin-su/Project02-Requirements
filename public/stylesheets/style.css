@@ -90,7 +90,7 @@ nav ul li:hover {
 }
 
 #logout {
-  background-color: Transparent;
+  background-color: transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
@@ -140,6 +140,16 @@ nav ul li:hover {
 
 .header-content button:hover {
   border-radius: 0;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.collection-item {
+  list-style: none;
 }
 
 /* Animate Background*/

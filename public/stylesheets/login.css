@@ -19,7 +19,7 @@ body {
   position: relative;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   padding: 0;
   margin: 0px;
 }
@@ -37,6 +37,7 @@ header {
 /* navbar */
 nav {
   color: #fff;
+  width: 100%;
   float: right;
   margin: 30px 90px;
 }
@@ -46,7 +47,7 @@ nav ul {
 }
 
 nav ul li {
-  float: left;
+  float: right;
   transition: 0.3s;
 }
 
@@ -145,11 +146,9 @@ body {
   background-color:#6abadeba;    
 }  
 
-.login{  
-  width: 382px;  
-  overflow: hidden;  
+.login { 
+  width: 382px;   
   margin: auto;  
-  margin: 20 0 0 450px;  
   padding: 80px;  
   background: #964CE2;  
   border-radius: 15px ;  
@@ -195,7 +194,12 @@ label{
 #moment {
   font-size: 15px;
   color: white;
-  width: 50%
+  width: 100%;
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
 }
 
 span{  
@@ -207,7 +211,7 @@ a {
     float: right;  
 }
 
-input[type=button] {
+input[type=button], .label {
   width: 140px;
   color: #591bc5;
   font-size: 14px;
@@ -223,3 +227,4 @@ input[type=button] {
 input button:hover {
   border-radius: 0;
 }
+
