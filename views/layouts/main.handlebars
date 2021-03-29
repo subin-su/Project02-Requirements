@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CornStocks</title>
+  <link rel="icon" type="image/png"
+    href="/Users/azuni/Desktop/ProjectCornstocks/Project02-Requirements/images/ear-of-corn.png" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <style>
@@ -15,36 +17,36 @@
 <body>
   <div class="container-fluid">
     <!-- Background animation-->
-    <div class="background">  
-    <nav>
-      <div class="nav-wrapper">
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/dashboard">Dashboard</a>
-          </li>
-          <li>
-            {{#if loggedIn}}
-            <button id="logout">Logout</button>
-            {{else}}
-            <a href="/login">Login</a>
-            {{/if}}
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="background">
+      <nav>
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/dashboard">Dashboard</a>
+            </li>
+            <li>
+              {{#if loggedIn}}
+              <button id="logout">Logout</button>
+              {{else}}
+              <a href="/login">Login</a>
+              {{/if}}
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <main>
-      {{{ body }}}
-    </main>
-    <footer class="footer">
-      &#169; Team 10
-    </footer>
+      <main>
+        {{{ body }}}
+      </main>
+      <footer class="footer">
+        &#169; Team 10
+      </footer>
     </div>
   </div>
-  
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
