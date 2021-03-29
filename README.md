@@ -1,37 +1,34 @@
-# MVC-Techblog
+# CornStocks
 
 ## Description
 
-The challenge this week is to build a CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well. 
+CornStocks helps investors track their stocks by providing live market data. The convenient notes feature is displayed along with the stock tracker and allows users to document their thoughts, ideas, research and important dates all on one page. 
   
-## Installation 
+## Built With 
 
-  * npm init -y
-  
-  * npm install --save mysql2
-  
-  * npm i sequelize
-
-  * npm install dotenv
-
-  * npm install bcrypt
-
-  * npm install express-session
-
-  * npm install connect-session-squelize
-
-  * npm install express-handlebars
+  * HTML
+  * JavaScript
+  * CSS
+  * BootStrap
+  * Axios
+  * Express
+  * Bcrypt
+  * MySql2
+  * Dotenv
+  * Handlebars
+  * Sequelize
 
 ## Links
-https://techblog-azun.herokuapp.com/
 
-^ Heroku Live page
+Live Page: https://cornstocks-10-team.herokuapp.com/
 
-https://azun510.github.io/mvc-techblog/
+GitHub Repository: https://github.com/subin-su/Project02-Requirements
 
-^ Github Repository
 
-## Screenshots
-![alt text](https://github.com/azun510/mvc-techblog/blob/main/images/Dashboard.JPG)
+## Images
 
-![alt text](https://github.com/azun510/mvc-techblog/blob/main/images/homepage.JPG)
+![alt text](public/stylesheets/stock-readme.png)
+
+![alt text](public/stylesheets/login-readme.png)
+
+![alt text](public/stylesheets/homepage-readme.png)
